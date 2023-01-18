@@ -7,18 +7,21 @@ var specialChar = function getRandomSymbols() {
   return symbols[Math.floor(Math.random() * symbols.length)]
 }
 
+// this function is for random lower case letters
 var lowerCase = function getRandomLower(){
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
+// this function is for random upper case letters
 var upperCase = function getRandomUpper(){
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
+// this function is for random numbers
 var numbers = function getRandomNumber(){
   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 } 
-
+// this function is for random lower case letters
 
 // var specialChar = ["~","!","@","#","$","%","^","&","*","(",")","-","+"];
 // var lowerCase = ["a","b","c","d"];
