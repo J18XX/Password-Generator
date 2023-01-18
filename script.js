@@ -1,27 +1,28 @@
 
 var passwordChoice = [];
 
-// var specialChar = function getRandomSymbols() {
-//   const symbols = '~!@#$%^&*()_+<>{}[].,/';
-//   return symbols[Math.floor(Math.random() * symbols.length)]
-// }
+var specialChar = function getRandomSymbols() {
+  const symbols = '~!@#$%^&*()_+<>{}[].,/';
+  return symbols[Math.floor(Math.random() * symbols.length)]
+}
 
-// var lowerCase = function getRandomLower(){
-//   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-// }
+var lowerCase = function getRandomLower(){
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
 
-// var upperCase = function getRandomUpper(){
-//   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-// }
+var upperCase = function getRandomUpper(){
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
 
-// var numbers = function getRandomNumber(){
-//   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-// } 
+var numbers = function getRandomNumber(){
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+} 
 
-var specialChar = ["~","!","@","#","$","%","^","&","*","(",")","-","+"];
-var lowerCase = ["a","b","c","d"];
-var upperCase = ["A", "B", "C", "D"];
-var numbers = ["1", "2", "3", "4"];
+
+// var specialChar = ["~","!","@","#","$","%","^","&","*","(",")","-","+"];
+// var lowerCase = ["a","b","c","d"];
+// var upperCase = ["A", "B", "C", "D"];
+// var numbers = ["1", "2", "3", "4"];
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -75,7 +76,7 @@ function generatePassword(){
   var password = "";
   for (var i = 0; i < passwordLengths; i++){
     var randonIndex = Math.floor(Math.random() * passwordChoice.length);
-    password = password + passwordChoice[randonIndex];
+    password = password + passwordChoice[randonIndex]();
   }
 
   return password;
