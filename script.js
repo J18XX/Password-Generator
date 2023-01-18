@@ -1,6 +1,7 @@
 
 var passwordChoice = [];
 
+// this function is for random special Chars
 var specialChar = function getRandomSymbols() {
   const symbols = '~!@#$%^&*()_+<>{}[].,/';
   return symbols[Math.floor(Math.random() * symbols.length)]
@@ -71,7 +72,7 @@ function getPrompts(){
 
   return true;
 }
-
+// this function generate my random password 
 function generatePassword(){
   var password = "";
   for (var i = 0; i < passwordLengths; i++){
